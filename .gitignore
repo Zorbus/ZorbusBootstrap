@@ -1,8 +1,8 @@
 *~
 /nbproject
 /vendor
-/app/cache
-/app/log
-/web/uploads
+/app/cache/*
+/app/logs/*
+/web/uploads/*
 /web/bundles
 /app/bootstrap*

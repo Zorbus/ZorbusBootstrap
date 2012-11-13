@@ -2,19 +2,6 @@ zorbus_user:
     resource: "@ZorbusUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-# zorbus bundle routes
-zorbus_glossary:
-    resource: "@ZorbusGlossaryBundle/Resources/config/routing.yml"
-    prefix:   /glossary
-
-zorbus_block:
-    resource: "@ZorbusBlockBundle/Resources/config/routing.yml"
-    prefix:   /
-
-zorbus_page:
-    resource: "@ZorbusPageBundle/Resources/config/routing.yml"
-    prefix:   /
-
 # sonata bundle routes
 sonta_admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
@@ -32,7 +19,6 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
-
 
 # fosFacebookBundle
 _fb_security_check:
@@ -59,7 +45,6 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
-
 
 # Internal routing configuration to handle ESI
 _internal:
