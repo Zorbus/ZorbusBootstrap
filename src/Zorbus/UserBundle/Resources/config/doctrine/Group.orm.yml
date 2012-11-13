@@ -1,0 +1,8 @@
+Zorbus\UserBundle\Entity\Group:
+    type: entity
+    table: fos_user_group
+    repositoryClass: Zorbus\UserBundle\Entity\GroupRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }

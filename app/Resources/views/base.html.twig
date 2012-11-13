@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {{ facebook_initialize({'xfbml': true, 'fbAsyncInit': 'onFbInit();'}) }}
+        <div class="fb">{{ facebook_login_button({'autologoutlink': true}) }}</div>
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <p>logado {{ app.user.username }} <a href="{{ path('fos_user_security_logout') }}">Logout</a></p>
+        {% else %}
+            <p>faz login</p>
+        {% endif %}
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <script>
+            function goLogIn(){
+                window.location = "{{ path('_fb_security_check') }}";
+            }
+
+            function onFbInit() {
+                if (typeof(FB) != 'undefined' && FB != null ) {
+                    FB.Event.subscribe('auth.logout', function(response) {
+                        window.location.href = "{{ path('fos_user_security_logout') }}";
+                    });
+                    FB.Event.subscribe('auth.statusChange', function(response) {
+                        if (response.session || response.authResponse) {
+                            setTimeout(goLogIn, 500);
+                        } else {
+                            window.location.href = "{{ path('fos_user_security_logout') }}";
+                        }
+                    });
+                }
+            }
+        </script>
+    </body>
+</html>

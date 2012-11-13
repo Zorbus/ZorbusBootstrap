@@ -1,0 +1,35 @@
+Zorbus\UserBundle\Entity\User:
+    type: entity
+    table: fos_user_user
+    repositoryClass: Zorbus\UserBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        first_name:
+            type: string
+            length: 255
+            nullable: false
+        last_name:
+            type: string
+            length: 255
+            nullable: false
+        facebook_id:
+            type: string
+            length: 255
+            nullable: true
+        is_blocked:
+            type: boolean
+            default: false
+            nullable: true
+        created_at:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+        updated_at:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update

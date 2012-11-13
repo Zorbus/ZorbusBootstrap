@@ -1,0 +1,3 @@
+zorbus_user_homepage:
+    pattern:  /facebook/
+    defaults: { _controller: ZorbusUserBundle:Default:facebook }

@@ -1,0 +1,8 @@
+parameters:
+    zorbus_article.article.admin.class: Zorbus\ZorbusBundle\Admin\ArticleAdmin
+    zorbus_article.article.entity.class: Zorbus\ZorbusBundle\Entity\Article
+
+services:
+#    mom_zone_zorbus.example:
+#        class: %mom_zone_zorbus.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

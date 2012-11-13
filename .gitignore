@@ -1,0 +1,8 @@
+*~
+/nbproject
+/vendor
+/app/cache
+/app/log
+/web/uploads
+/web/bundles
+/app/bootstrap*

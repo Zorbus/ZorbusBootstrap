@@ -1,0 +1,5 @@
+Zorbus\ZorbusBundle\Entity\Article:
+    type: entity
+    table: zorbus_article_article
+    repositoryClass: Zorbus\ZorbusBundle\Entity\ArticleRepository
+    fields:
