@@ -31,5 +31,9 @@ Web Server
 * Or as an alternative, if using php 5.4 or higher
 ** php app/console server:run
 
+Administration
+--------------
+
 And then visit http://localhost:8080/admin/dashboard
+
 Username: zorbus and Password: 1234567
