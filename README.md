@@ -19,21 +19,22 @@ Database
 --------
 
 * create tables
-** php app/console doctrine:migrations:migrate
-
+  * php app/console doctrine:migrations:migrate
 * load fixtures
-** php app/console doctrine:fixtures:load
+  * just the admin user
+    * php app/console doctrine:fixtures:load --fixtures=src/Zorbus/UserBundle
+  * or all zorbus fixtures
+    * php app/console doctrine:fixtures:load
 
 Web Server
 ----------
 
 * Configure Apache VirtualHost
 * Or as an alternative, if using php 5.4 or higher
-** php app/console server:run
+  * php app/console server:run
 
 Administration
 --------------
 
-And then visit http://localhost:8080/admin/dashboard
-
-Username: zorbus and Password: 1234567
+* And then visit http://localhost:8000/admin/dashboard
+  *Username: zorbus and Password: 1234567
