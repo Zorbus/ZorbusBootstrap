@@ -133,3 +133,9 @@ fos_facebook:
       secret: fb_secret
       cookie: true
       permissions: [email, user_birthday, user_location]
+
+zorbus:
+    article:
+        admin:
+            class: Zorbus\ZorbusBundle\Admin\ArticleAdmin
+            entity: Zorbus\ZorbusBundle\Entity\Article
