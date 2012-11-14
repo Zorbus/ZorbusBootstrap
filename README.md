@@ -20,11 +20,8 @@ Database
 
 * create tables
   * php app/console doctrine:migrations:migrate
-* load fixtures
-  * just the admin user
-    * php app/console doctrine:fixtures:load --fixtures=src/Zorbus/UserBundle
-  * or all zorbus fixtures
-    * php app/console doctrine:fixtures:load
+* load fixtures for the admin user. Remove --fixtures parameter to load all.
+  * php app/console doctrine:fixtures:load --fixtures=src/Zorbus/UserBundle
 
 Web Server
 ----------
@@ -37,4 +34,4 @@ Administration
 --------------
 
 * And then visit http://localhost:8000/admin/dashboard
-  *Username: zorbus and Password: 1234567
+  * Username: zorbus and Password: 1234567
