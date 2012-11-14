@@ -134,7 +134,7 @@ fos_facebook:
       cookie: true
       permissions: [email, user_birthday, user_location]
 
-zorbus:
+zorbus_article:
     article:
         admin:
             class: Zorbus\ZorbusBundle\Admin\ArticleAdmin

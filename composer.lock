@@ -1503,12 +1503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle",
-                "reference": "0c7a0aef0729f92ddfdc55265ddb1ed16b03a055"
+                "reference": "6448a72f29ba90007d1496b6dfe4ba2b409d9c1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/0c7a0aef0729f92ddfdc55265ddb1ed16b03a055.zip",
-                "reference": "0c7a0aef0729f92ddfdc55265ddb1ed16b03a055",
+                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/6448a72f29ba90007d1496b6dfe4ba2b409d9c1a.zip",
+                "reference": "6448a72f29ba90007d1496b6dfe4ba2b409d9c1a",
                 "shasum": ""
             },
             "require": {
@@ -1523,7 +1523,7 @@
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master"
             },
-            "time": "1352489910",
+            "time": "1352888052",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -2566,18 +2566,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "b16765ce8f8edd227c6c90dba489326001fd348a"
+                "reference": "f85076b091c6b6a2f9e14276a436724d23a1217e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/b16765ce8f8edd227c6c90dba489326001fd348a.zip",
-                "reference": "b16765ce8f8edd227c6c90dba489326001fd348a",
+                "url": "https://github.com/fabpot/Twig/archive/f85076b091c6b6a2f9e14276a436724d23a1217e.zip",
+                "reference": "f85076b091c6b6a2f9e14276a436724d23a1217e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1352654530",
+            "time": "1352875253",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2616,12 +2616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusArticleBundle",
-                "reference": "2342286d73bcaf956052d77b4703072e9df28dbc"
+                "reference": "b04ec792667906677bd27e07e60d7d1b000a70da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/2342286d73bcaf956052d77b4703072e9df28dbc.zip",
-                "reference": "2342286d73bcaf956052d77b4703072e9df28dbc",
+                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/b04ec792667906677bd27e07e60d7d1b000a70da.zip",
+                "reference": "b04ec792667906677bd27e07e60d7d1b000a70da",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2635,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352492159",
+            "time": "1352895785",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
