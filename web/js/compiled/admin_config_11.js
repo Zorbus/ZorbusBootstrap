@@ -1,0 +1,1 @@
+CKFinder.customConfig=function(a){a.language="en";a.skin="kama";a.removePlugins="basket"};CKFinder.setupCKEditor(null,"/ckfinder/","Files","Files");

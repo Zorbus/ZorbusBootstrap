@@ -22,51 +22,51 @@ class ArticleAdmin extends Admin
     {
         $formMapper
                 ->with('Identification')
-                ->add('title')
-                ->add('subtitle')
-                ->add('resume', 'textarea', array('required' => false, 'attr' => array('class' => 'ckeditor')))
-                ->add('body', 'textarea', array('required' => false, 'attr' => array('class' => 'ckeditor')))
+                    ->add('title')
+                    ->add('subtitle')
+                    ->add('resume', 'textarea', array('required' => false, 'attr' => array('class' => 'ckeditor')))
+                    ->add('body', 'textarea', array('required' => false, 'attr' => array('class' => 'ckeditor')))
                 ->end()
                 ->with('Configuration', array('collapsed' => false))
-                ->add('type')
-                ->add('attachmentTemp', 'file', array('required' => false, 'label' => 'Attachment'))
-                ->add('imageTemp', 'file', array('required' => false, 'label' => 'Image'))
-                ->add('status', 'choice', array(
-                    'choices' => array(
-                        'draft' => 'Draft',
-                        'published' => 'Published',
-                        'archived' => 'Archived'
-                    )
-                ))
-                ->add('is_highlighted')
-                ->add('enabled', null, array('required' => false))
+                    ->add('type')
+                    ->add('attachmentTemp', 'file', array('required' => false, 'label' => 'Attachment'))
+                    ->add('imageTemp', 'file', array('required' => false, 'label' => 'Image'))
+                    ->add('status', 'choice', array(
+                        'choices' => array(
+                            'draft' => 'Draft',
+                            'published' => 'Published',
+                            'archived' => 'Archived'
+                        )
+                    ))
+                    ->add('is_highlighted')
+                    ->add('enabled', null, array('required' => false))
                 ->end()
                 ->with('Dates', array('collapsed' => true))
-                ->add('date_show')
-                ->add('date_hide')
-                ->add('date_published')
-                ->add('date_event')
+                    ->add('date_show')
+                    ->add('date_hide')
+                    ->add('date_published')
+                    ->add('date_event')
                 ->end()
                 ->with('Extra', array('collapsed' => true))
-                ->add('author')
-                ->add('source')
-                ->add('local')
+                    ->add('author')
+                    ->add('source')
+                    ->add('local')
                 ->end()
                 ->with('Classification', array('collapsed' => true))
-                ->add('categories', 'entity', array(
-                    'class' => 'Zorbus\\ArticleBundle\\Entity\\Category',
-                    'multiple' => true,
-                    'expanded' => false,
-                    'required' => false,
-                    'attr' => array('class' => 'select2 span5')
-                ))
-                ->add('tags', 'entity', array(
-                    'class' => 'Zorbus\\ArticleBundle\\Entity\\Tag',
-                    'multiple' => true,
-                    'expanded' => false,
-                    'required' => false,
-                    'attr' => array('class' => 'select2 span5')
-                ))
+                    ->add('categories', 'entity', array(
+                        'class' => 'Zorbus\\ArticleBundle\\Entity\\Category',
+                        'multiple' => true,
+                        'expanded' => false,
+                        'required' => false,
+                        'attr' => array('class' => 'select2 span5')
+                    ))
+                    ->add('tags', 'entity', array(
+                        'class' => 'Zorbus\\ArticleBundle\\Entity\\Tag',
+                        'multiple' => true,
+                        'expanded' => false,
+                        'required' => false,
+                        'attr' => array('class' => 'select2 span5')
+                    ))
                 ->end()
         ;
     }
@@ -77,6 +77,8 @@ class ArticleAdmin extends Admin
                 ->add('title')
                 ->add('type')
                 ->add('status')
+                ->add('tags')
+                ->add('categories')
                 ->add('enabled')
         ;
     }
@@ -112,8 +114,8 @@ class ArticleAdmin extends Admin
     {
         $errorElement
                 ->with('title')
-                ->assertNotBlank()
-                ->assertMaxLength(array('limit' => 255))
+                    ->assertNotBlank()
+                    ->assertMaxLength(array('limit' => 255))
                 ->end()
         ;
     }

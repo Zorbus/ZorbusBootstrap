@@ -22,7 +22,9 @@ file that was distributed with this source code.
 
             <tbody>
                 {% for admin in group.items %}
-                    {% if admin.hasroute('create') and admin.isGranted('CREATE') or admin.hasroute('list') and admin.isGranted('LIST') %}
+                    {% if admin == 'zorbus_admin.dash' %}
+                        <tr><td colspan="2"></td></tr>
+                    {% elseif admin.hasroute('create') and admin.isGranted('CREATE') or admin.hasroute('list') and admin.isGranted('LIST') %}
                         <tr>
                             <td class="sonata-ba-list-label">{{ admin.label|trans({}, admin.translationdomain) }}</td>
                             <td>

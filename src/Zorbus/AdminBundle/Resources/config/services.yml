@@ -1,3 +1,8 @@
 parameters:
 
 services:
+    sonata.admin.pool:
+        class: Zorbus\AdminBundle\Admin\Pool
+        arguments: ['@service_container']
+        calls:
+           - [setTemplates, [%sonata.admin.configuration.templates%]]

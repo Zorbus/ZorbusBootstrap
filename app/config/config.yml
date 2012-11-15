@@ -26,8 +26,9 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ ]
-    #java: /usr/bin/java
+    bundles:
+        - SonataAdminBundle
+    java: /usr/bin/java
     filters:
         cssrewrite: ~
         #closure:
@@ -73,7 +74,7 @@ stof_doctrine_extensions:
             sortable: true
 
 fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    db_driver: orm
     firewall_name: admin
     user_class: Zorbus\UserBundle\Entity\User
     group:
@@ -114,7 +115,7 @@ sonata_cache:
 
 sonata_admin:
     security:
-        handler: sonata.admin.security.handler.role
+        handler: sonata.admin.security.handler.acl
     title:      Zorbus Administration Area
     title_logo: /bundles/sonataadmin/logo_title.png
     templates:
@@ -130,6 +131,65 @@ sonata_admin:
         blocks:
             # display a dashboard block
             - { position: left, type: sonata.admin.block.admin_list }
+        groups:
+            users:
+                label: Users
+                items:
+                    - sonata.user.admin.user
+                    - sonata.user.admin.group
+            content:
+                label: Content
+                items:
+                    - zorbus_article.article.admin
+                    - zorbus_article.category.admin
+                    - zorbus_article.tag.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_faq.faq.admin
+                    - zorbus_faq.item.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_glossary.glossary.admin
+                    - zorbus_glossary.entry.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_link.link.admin
+                    - zorbus_link.category.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_poll.poll.admin
+                    - zorbus_poll.option.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_document.document.admin
+                    - zorbus_document.tag.admin
+            images:
+                label: Images
+                items:
+                    - zorbus_gallery.gallery.admin
+                    - zorbus_gallery.image.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_banner.banner.admin
+                    - zorbus_banner.image.admin
+            pages:
+                label: Pages
+                items:
+                    - zorbus_page.page.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_menu.menu.admin
+
+                    - zorbus_admin.dash
+
+                    - zorbus_block.block.admin
 
 fos_facebook:
       file:   %kernel.root_dir%/../vendor/facebook/php-sdk/src/facebook.php

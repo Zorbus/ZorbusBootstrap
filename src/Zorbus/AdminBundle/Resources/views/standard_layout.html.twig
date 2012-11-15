@@ -25,34 +25,39 @@ file that was distributed with this source code.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% block stylesheets %}
-            <!-- jQuery code -->
-            <link rel="stylesheet" href="{{ asset('bundles/sonatajquery/themes/flick/jquery-ui-1.8.16.custom.css') }}" type="text/css" media="all" />
+            {% stylesheets
+                'bundles/sonatajquery/themes/flick/jquery-ui-1.8.16.custom.css'
+                'bundles/sonataadmin/bootstrap/css/bootstrap.min.css'
+                'bundles/sonataadmin/bootstrap/css/bootstrap-responsive.min.css'
+                'bundles/sonataadmin/css/layout.css'
+                'bundles/sonataadmin/css/colors.css'
+                'select2/select2.css'
 
-            <link rel="stylesheet" href="{{ asset('bundles/sonataadmin/bootstrap/css/bootstrap.min.css') }}" type="text/css" media="all"  />
-            <link rel="stylesheet" href="{{ asset('bundles/sonataadmin/bootstrap/css/bootstrap-responsive.min.css') }}" type="text/css" media="all" />
+            filter='cssrewrite, yui_css' output="css/compiled/admin.css" %}
 
-            <!-- base application asset -->
-            <link rel="stylesheet" href="{{ asset('bundles/sonataadmin/css/layout.css') }}" type="text/css" media="all" />
-            <link rel="stylesheet" href="{{ asset('bundles/sonataadmin/css/colors.css') }}" type="text/css" media="all" />
-            <link rel="stylesheet" href="{{ asset('select2/select2.css') }}" type="text/css" media="all" />
+                <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+            {% endstylesheets %}
         {% endblock %}
 
+
         {% block javascripts %}
-            <script src="{{ asset('bundles/sonatajquery/jquery-1.8.0.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('bundles/sonatajquery/jquery-ui-1.8.23.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('bundles/sonatajquery/jquery-ui-i18n.js') }}" type="text/javascript"></script>
-
-            <script src="{{ asset('bundles/sonataadmin/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
-
-            <script src="{{ asset('bundles/sonataadmin/qtip/jquery.qtip-1.0.0-rc3.min.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('bundles/sonataadmin/jquery/jquery.form.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('bundles/sonataadmin/base.js') }}" type="text/javascript"></script>
             <script src="{{ asset('ckeditor/ckeditor.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('ckeditor/config.js') }}" type="text/javascript"></script>
             <script src="{{ asset('ckfinder/ckfinder.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('ckfinder/config.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('select2/select2.min.js') }}" type="text/javascript"></script>
-            <script src="{{ asset('select2/config.js') }}" type="text/javascript"></script>
+            {% javascripts
+                'bundles/sonatajquery/jquery-1.8.0.js'
+                'bundles/sonatajquery/jquery-ui-1.8.23.js'
+                'bundles/sonatajquery/jquery-ui-i18n.js'
+                'bundles/sonataadmin/bootstrap/js/bootstrap.min.js'
+                'bundles/sonataadmin/qtip/jquery.qtip-1.0.0-rc3.min.js'
+                'bundles/sonataadmin/jquery/jquery.form.js'
+                'bundles/sonataadmin/base.js'
+                'select2/select2.min.js'
+                'select2/config.js'
+                'ckeditor/config.js'
+                'ckfinder/config.js'
+             filter='yui_js' output='js/compiled/admin.js' %}
+                <script src="{{ asset_url }}" type="text/javascript"></script>
+            {% endjavascripts %}
         {% endblock %}
 
         <title>
@@ -94,7 +99,7 @@ file that was distributed with this source code.
                             </a>
                         {% endblock %}
 
-                        <div class="nav-collapse">
+                        <div class="nav-collapse collapse">
                             <ul class="nav">
                                 {% block top_bar_before_nav %} {% endblock %}
                                 {% block sonata_top_bar_nav %}
@@ -104,7 +109,9 @@ file that was distributed with this source code.
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ group.label|trans({}, group.label_catalogue) }} <span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
                                                     {% for admin in group.items %}
-                                                        {% if admin.hasroute('create') and admin.isGranted('CREATE') or admin.hasroute('list') and admin.isGranted('LIST') %}
+                                                        {% if admin == 'zorbus_admin.dash' %}
+                                                            <li class="divider"></li>
+                                                        {% elseif admin.hasroute('create') and admin.isGranted('CREATE') or admin.hasroute('list') and admin.isGranted('LIST') %}
                                                             <li><a href="{{ admin.generateUrl('list')}}">{{ admin.label|trans({}, admin.translationdomain) }}</a></li>
                                                         {% endif %}
                                                     {% endfor %}
