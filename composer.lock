@@ -643,12 +643,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "473210190cf196674da2304c30bc98906800fed7"
+                "reference": "3d838ada9a100ca56ec2487294761e64001f48c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/l3pp4rd/DoctrineExtensions/zipball/473210190cf196674da2304c30bc98906800fed7",
-                "reference": "473210190cf196674da2304c30bc98906800fed7",
+                "url": "https://github.com/l3pp4rd/DoctrineExtensions/archive/3d838ada9a100ca56ec2487294761e64001f48c2.zip",
+                "reference": "3d838ada9a100ca56ec2487294761e64001f48c2",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "doctrine/orm": ">=2.1",
                 "doctrine/mongodb-odm": "*"
             },
-            "time": "1351837444",
+            "time": "1352993555",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -678,7 +678,7 @@
             "authors": [
                 {
                     "name": "Gediminas Morkevicius",
-                    "email": "gediminas.morkevicius@gmail"
+                    "email": "gediminas.morkevicius@gmail.com"
                 }
             ],
             "description": "Doctrine2 behavioral extensions",
@@ -2616,12 +2616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusArticleBundle",
-                "reference": "bdf62fb9054bc9574d704613cce935f198b71cac"
+                "reference": "6e161bccd647ec061865a1912fcebabbcc6b4cac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/bdf62fb9054bc9574d704613cce935f198b71cac.zip",
-                "reference": "bdf62fb9054bc9574d704613cce935f198b71cac",
+                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/6e161bccd647ec061865a1912fcebabbcc6b4cac.zip",
+                "reference": "6e161bccd647ec061865a1912fcebabbcc6b4cac",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2635,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352985996",
+            "time": "1353067255",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2674,12 +2674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusBannerBundle",
-                "reference": "5fb35658f90f0333203928c50d7674d0d973a393"
+                "reference": "4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusBannerBundle/archive/5fb35658f90f0333203928c50d7674d0d973a393.zip",
-                "reference": "5fb35658f90f0333203928c50d7674d0d973a393",
+                "url": "https://github.com/Zorbus/ZorbusBannerBundle/archive/4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511.zip",
+                "reference": "4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1351691064",
+            "time": "1353070057",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2732,12 +2732,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusBlockBundle",
-                "reference": "1ad2572c01bff95f103554b1315d8a05b66e7580"
+                "reference": "c987ec1f2f038f02727c25dbeb34b6a74c7d439a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusBlockBundle/archive/1ad2572c01bff95f103554b1315d8a05b66e7580.zip",
-                "reference": "1ad2572c01bff95f103554b1315d8a05b66e7580",
+                "url": "https://github.com/Zorbus/ZorbusBlockBundle/archive/c987ec1f2f038f02727c25dbeb34b6a74c7d439a.zip",
+                "reference": "c987ec1f2f038f02727c25dbeb34b6a74c7d439a",
                 "shasum": ""
             },
             "require": {
@@ -2753,7 +2753,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352678567",
+            "time": "1353070679",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {

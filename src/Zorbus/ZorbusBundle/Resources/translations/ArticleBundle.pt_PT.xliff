@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>Status</source>
+                <target>Estado</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Title</source>
+                <target>Título</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Type</source>
+                <target>Tipo</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Tags</source>
+                <target>Etiquetas</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Categories</source>
+                <target>Categorias</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Enabled</source>
+                <target>Ativo</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Article List</source>
+                <target>A listar os artigos</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Identification</source>
+                <target>Identificação</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Configuration</source>
+                <target>Configuração</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Dates</source>
+                <target>Datas</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Extra</source>
+                <target>Extra</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Classification</source>
+                <target>Classificação</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>Subtitle</source>
+                <target>Subtítulo</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Resume</source>
+                <target>Resumo</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Body</source>
+                <target>Corpo</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Attachment</source>
+                <target>Anexo</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Image</source>
+                <target>Imagem</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>Is Highlighted</source>
+                <target>Realçado</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>Date Show</source>
+                <target>Data de entrada</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Date Hide</source>
+                <target>Data de saída</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Date Published</source>
+                <target>Data de publicação</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Date Event</source>
+                <target>Data do evento</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>Author</source>
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>Source</source>
+                <target>Fonte</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>Local</source>
+                <target>Local</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Published</source>
+                <target>Publicado</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Draft</source>
+                <target>Rascunho</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>Archived</source>
+                <target>Arquivado</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source></source>
+                <target></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
