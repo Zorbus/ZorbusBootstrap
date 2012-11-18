@@ -140,44 +140,68 @@ sonata_admin:
             content:
                 label: Content
                 items:
+                    - zorbus_admin.submenu.start
+                    - Article
                     - zorbus_article.article.admin
                     - zorbus_article.category.admin
                     - zorbus_article.tag.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - FAQs
                     - zorbus_faq.faq.admin
                     - zorbus_faq.item.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - Glossaries
                     - zorbus_glossary.glossary.admin
                     - zorbus_glossary.entry.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - Links
                     - zorbus_link.link.admin
                     - zorbus_link.category.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - Polls
                     - zorbus_poll.poll.admin
                     - zorbus_poll.option.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - Documents
                     - zorbus_document.document.admin
                     - zorbus_document.tag.admin
+                    - zorbus_admin.submenu.end
             images:
                 label: Images
                 items:
+                    - zorbus_admin.submenu.start
+                    - Galleries
                     - zorbus_gallery.gallery.admin
                     - zorbus_gallery.image.admin
+                    - zorbus_admin.submenu.end
 
                     - zorbus_admin.dash
 
+                    - zorbus_admin.submenu.start
+                    - Banners
                     - zorbus_banner.banner.admin
                     - zorbus_banner.image.admin
+                    - zorbus_admin.submenu.end
             pages:
                 label: Pages
                 items:
@@ -190,7 +214,6 @@ sonata_admin:
                     - zorbus_admin.dash
 
                     - zorbus_block.block.admin
-
 fos_facebook:
       file:   %kernel.root_dir%/../vendor/facebook/php-sdk/src/facebook.php
       alias:  facebook

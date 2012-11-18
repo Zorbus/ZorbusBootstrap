@@ -22,20 +22,52 @@ class Pool extends BasePool
 
         foreach ($this->adminGroups as $name => $adminGroup) {
             if (isset($adminGroup['items'])) {
+                $submenu = false; $index = null;
+
                 foreach ($adminGroup['items'] as $key => $id) {
-                    if ($id !== 'zorbus_admin.dash')
+                    if ($id === 'zorbus_admin.dash')
+                    {
+                        $groups[$name]['items'][$key] = array('zorbus_admin.dash' => array('zorbus_admin.dash'));
+                    }
+                    else if ($id === 'zorbus_admin.submenu.start')
+                    {
+                        $index = $key;
+                        $submenu = true;
+                        $groups[$name]['items'][$key] = array('zorbus_admin.submenu' => array());
+                    }
+                    else if ($id === 'zorbus_admin.submenu.end')
+                    {
+                        $submenu = false;
+                        $index = null;
+                        unset($groups[$name]['items'][$key]);
+                    }
+                    else if ($submenu)
+                    {
+                        // first element is the title of the submenu
+                        if (count($groups[$name]['items'][$index]['zorbus_admin.submenu']) == 0)
+                        {
+                            $groups[$name]['items'][$index]['zorbus_admin.submenu'][] = $id;
+                        }
+                        else
+                        {
+                            $admin = $this->getInstance($id);
+
+                            if ($admin->showIn(Admin::CONTEXT_DASHBOARD)) {
+                                $groups[$name]['items'][$index]['zorbus_admin.submenu'][] = $admin;
+                            }
+                        }
+
+                        unset($groups[$name]['items'][$key]);
+                    }
+                    else
                     {
                         $admin = $this->getInstance($id);
 
                         if ($admin->showIn(Admin::CONTEXT_DASHBOARD)) {
-                            $groups[$name]['items'][$key] = $admin;
+                            $groups[$name]['items'][$key] = array('zorbus_admin.item' => array($admin));
                         } else {
                             unset($groups[$name]['items'][$key]);
                         }
-                    }
-                    else
-                    {
-                        $groups[$name]['items'][$key] = 'zorbus_admin.dash';
                     }
                 }
             }
