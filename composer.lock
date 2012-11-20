@@ -181,12 +181,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineBundle.git",
-                "reference": "4fa47caf19c426d607a636b2da73bc0e5a87ec66"
+                "reference": "47df202dfb4ad38e15d6aed8a53e722b30c9f9fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineBundle/archive/4fa47caf19c426d607a636b2da73bc0e5a87ec66.zip",
-                "reference": "4fa47caf19c426d607a636b2da73bc0e5a87ec66",
+                "url": "https://github.com/doctrine/DoctrineBundle/archive/47df202dfb4ad38e15d6aed8a53e722b30c9f9fd.zip",
+                "reference": "47df202dfb4ad38e15d6aed8a53e722b30c9f9fd",
                 "shasum": ""
             },
             "require": {
@@ -194,7 +194,7 @@
                 "doctrine/dbal": ">=2.2,<2.4-dev",
                 "symfony/framework-bundle": ">=2.1,<2.3-dev",
                 "symfony/doctrine-bridge": ">=2.1,<2.3-dev",
-                "jdorn/sql-formatter": "1.0.1"
+                "jdorn/sql-formatter": "v1.0.1"
             },
             "require-dev": {
                 "doctrine/orm": ">=2.2,<2.4-dev",
@@ -204,7 +204,7 @@
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
             },
-            "time": "1352579798",
+            "time": "1353074073",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -574,12 +574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
-                "reference": "809734e26fa68023f27e3752d370092fb1160e59"
+                "reference": "30dfe0b2bdea9cc54750092ebe19d05423d662fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/809734e26fa68023f27e3752d370092fb1160e59.zip",
-                "reference": "809734e26fa68023f27e3752d370092fb1160e59",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/30dfe0b2bdea9cc54750092ebe19d05423d662fb.zip",
+                "reference": "30dfe0b2bdea9cc54750092ebe19d05423d662fb",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "1352986811",
+            "time": "1353269280",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -643,12 +643,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "3d838ada9a100ca56ec2487294761e64001f48c2"
+                "reference": "446425919b7b27e521f846dfcab9eb493d3bb8b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/l3pp4rd/DoctrineExtensions/archive/3d838ada9a100ca56ec2487294761e64001f48c2.zip",
-                "reference": "3d838ada9a100ca56ec2487294761e64001f48c2",
+                "url": "https://github.com/l3pp4rd/DoctrineExtensions/archive/446425919b7b27e521f846dfcab9eb493d3bb8b5.zip",
+                "reference": "446425919b7b27e521f846dfcab9eb493d3bb8b5",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "doctrine/orm": ">=2.1",
                 "doctrine/mongodb-odm": "*"
             },
-            "time": "1352993555",
+            "time": "1353098190",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -951,12 +951,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle",
-                "reference": "75acafd5accce5a22dca478c22c90ba516a677ae"
+                "reference": "175191d174fab1881b632f9700706afc1807bb9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle/archive/75acafd5accce5a22dca478c22c90ba516a677ae.zip",
-                "reference": "75acafd5accce5a22dca478c22c90ba516a677ae",
+                "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle/archive/175191d174fab1881b632f9700706afc1807bb9d.zip",
+                "reference": "175191d174fab1881b632f9700706afc1807bb9d",
                 "shasum": ""
             },
             "require": {
@@ -964,7 +964,8 @@
                 "symfony/security-bundle": "*",
                 "jms/di-extra-bundle": "1.2.*",
                 "symfony/framework-bundle": ">=2.1.0,<2.3-dev",
-                "jms/aop-bundle": ">=1.0.0,<1.2-dev"
+                "jms/aop-bundle": ">=1.0.0,<1.2-dev",
+                "jms/parser-lib": "1.*"
             },
             "require-dev": {
                 "sensio/framework-extra-bundle": "*",
@@ -980,7 +981,7 @@
                 "symfony/form": "*",
                 "symfony/validator": "*"
             },
-            "time": "1352198017",
+            "time": "1353165233",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1000,7 +1001,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1256,18 +1257,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioDistributionBundle",
-                "reference": "v2.1.3"
+                "reference": "25dcc74a7f31eaacf53a407f024183345c6c4804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioDistributionBundle/archive/v2.1.3.zip",
-                "reference": "v2.1.3",
+                "url": "https://github.com/sensio/SensioDistributionBundle/archive/25dcc74a7f31eaacf53a407f024183345c6c4804.zip",
+                "reference": "25dcc74a7f31eaacf53a407f024183345c6c4804",
                 "shasum": ""
             },
             "require": {
                 "symfony/framework-bundle": "2.1.*"
             },
-            "time": "1347340208",
+            "time": "1353323932",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1349,12 +1350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioGeneratorBundle",
-                "reference": "56c2029d1f3f41b39dd0df40009cb448df010bf1"
+                "reference": "7efe50d35818a2ba72a7a05e40155b4789e5c3d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioGeneratorBundle/archive/56c2029d1f3f41b39dd0df40009cb448df010bf1.zip",
-                "reference": "56c2029d1f3f41b39dd0df40009cb448df010bf1",
+                "url": "https://github.com/sensio/SensioGeneratorBundle/archive/7efe50d35818a2ba72a7a05e40155b4789e5c3d9.zip",
+                "reference": "7efe50d35818a2ba72a7a05e40155b4789e5c3d9",
                 "shasum": ""
             },
             "require": {
@@ -1366,7 +1367,7 @@
                 "doctrine/orm": ">=2.1,<2.4-dev",
                 "twig/twig": ">=1.8,<2.0-dev"
             },
-            "time": "1352464423",
+            "time": "1353341457",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1435,12 +1436,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "0513b90bbabca45a1550924570b5f96f0ab9981f"
+                "reference": "ab7d888e209b8767f00a05656c11db85c5ef867b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/0513b90bbabca45a1550924570b5f96f0ab9981f.zip",
-                "reference": "0513b90bbabca45a1550924570b5f96f0ab9981f",
+                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/ab7d888e209b8767f00a05656c11db85c5ef867b.zip",
+                "reference": "ab7d888e209b8767f00a05656c11db85c5ef867b",
                 "shasum": ""
             },
             "require": {
@@ -1465,7 +1466,7 @@
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
                 "sonata-project/intl-bundle": "dev-master"
             },
-            "time": "1352720169",
+            "time": "1353365416",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1969,12 +1970,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle",
-                "reference": "3a4aff6924ceaf723fe4f0196fb548b46ddc9045"
+                "reference": "d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataUserBundle/archive/3a4aff6924ceaf723fe4f0196fb548b46ddc9045.zip",
-                "reference": "3a4aff6924ceaf723fe4f0196fb548b46ddc9045",
+                "url": "https://github.com/sonata-project/SonataUserBundle/archive/d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e.zip",
+                "reference": "d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e",
                 "shasum": ""
             },
             "require": {
@@ -1991,7 +1992,7 @@
             "suggest": {
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master"
             },
-            "time": "1352671488",
+            "time": "1353162877",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -2139,12 +2140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing",
-                "reference": "928d2e377a374075de6000917bf82fff796c5ea4"
+                "reference": "5a0e9a5a6d84f0aaed9651e0af75925b1a1427a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/Routing/archive/928d2e377a374075de6000917bf82fff796c5ea4.zip",
-                "reference": "928d2e377a374075de6000917bf82fff796c5ea4",
+                "url": "https://github.com/symfony-cmf/Routing/archive/5a0e9a5a6d84f0aaed9651e0af75925b1a1427a4.zip",
+                "reference": "5a0e9a5a6d84f0aaed9651e0af75925b1a1427a4",
                 "shasum": ""
             },
             "require": {
@@ -2152,7 +2153,7 @@
                 "symfony/routing": ">=2.1,<2.3-dev",
                 "symfony/http-kernel": ">=2.1,<2.3-dev"
             },
-            "time": "1352370041",
+            "time": "1353234470",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2188,12 +2189,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "175e7a787310fc6b6d6a3b4b83d9f0183a807c9e"
+                "reference": "15b34b73d1b471f3251808ba24ec5e6c9b63292e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/175e7a787310fc6b6d6a3b4b83d9f0183a807c9e.zip",
-                "reference": "175e7a787310fc6b6d6a3b4b83d9f0183a807c9e",
+                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/15b34b73d1b471f3251808ba24ec5e6c9b63292e.zip",
+                "reference": "15b34b73d1b471f3251808ba24ec5e6c9b63292e",
                 "shasum": ""
             },
             "require": {
@@ -2218,7 +2219,7 @@
                 "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle",
                 "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents"
             },
-            "time": "1352656987",
+            "time": "1353340900",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2426,12 +2427,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "9a2edb9a6396dc8a549b26dce78bef655a90e176"
+                "reference": "0a8c0eeb5ae3abefce9ba471f32c9c29ae090103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/archive/9a2edb9a6396dc8a549b26dce78bef655a90e176.zip",
-                "reference": "9a2edb9a6396dc8a549b26dce78bef655a90e176",
+                "url": "https://github.com/symfony/symfony/archive/0a8c0eeb5ae3abefce9ba471f32c9c29ae090103.zip",
+                "reference": "0a8c0eeb5ae3abefce9ba471f32c9c29ae090103",
                 "shasum": ""
             },
             "require": {
@@ -2480,7 +2481,7 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "1.*"
             },
-            "time": "1352985781",
+            "time": "1353359615",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2566,18 +2567,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "e1ad2bde9c2cf12e65a89ef5eadcccd048f1af0c"
+                "reference": "9b75e2c7ae51b66fd4bb2ffbf1d2f28a8604e8f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/e1ad2bde9c2cf12e65a89ef5eadcccd048f1af0c.zip",
-                "reference": "e1ad2bde9c2cf12e65a89ef5eadcccd048f1af0c",
+                "url": "https://github.com/fabpot/Twig/archive/9b75e2c7ae51b66fd4bb2ffbf1d2f28a8604e8f6.zip",
+                "reference": "9b75e2c7ae51b66fd4bb2ffbf1d2f28a8604e8f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1352899988",
+            "time": "1353308798",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2616,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusArticleBundle",
-                "reference": "6e161bccd647ec061865a1912fcebabbcc6b4cac"
+                "reference": "c51cd600d983db9d031c3981fb0ef62e84ea69e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/6e161bccd647ec061865a1912fcebabbcc6b4cac.zip",
-                "reference": "6e161bccd647ec061865a1912fcebabbcc6b4cac",
+                "url": "https://github.com/Zorbus/ZorbusArticleBundle/archive/c51cd600d983db9d031c3981fb0ef62e84ea69e6.zip",
+                "reference": "c51cd600d983db9d031c3981fb0ef62e84ea69e6",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2636,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1353067255",
+            "time": "1353360514",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2674,12 +2675,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusBannerBundle",
-                "reference": "4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511"
+                "reference": "ebcef631002816d1504b722e648b51f6718329da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusBannerBundle/archive/4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511.zip",
-                "reference": "4e3fe2b9fdbfae7f79e9dbe6248c6b6a53190511",
+                "url": "https://github.com/Zorbus/ZorbusBannerBundle/archive/ebcef631002816d1504b722e648b51f6718329da.zip",
+                "reference": "ebcef631002816d1504b722e648b51f6718329da",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2694,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1353070057",
+            "time": "1353360630",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2793,13 +2794,13 @@
             "target-dir": "Zorbus/DocumentBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/titomiguelcosta/ZorbusBlockBundle",
-                "reference": "0.0.1"
+                "url": "https://github.com/Zorbus/ZorbusDocumentBundle",
+                "reference": "a5667ed9b1ce862b3959f628426366ba7f0082a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/titomiguelcosta/ZorbusBlockBundle/archive/0.0.1.zip",
-                "reference": "0.0.1",
+                "url": "https://github.com/Zorbus/ZorbusDocumentBundle/archive/a5667ed9b1ce862b3959f628426366ba7f0082a2.zip",
+                "reference": "a5667ed9b1ce862b3959f628426366ba7f0082a2",
                 "shasum": ""
             },
             "require": {
@@ -2814,7 +2815,7 @@
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way",
                 "zorbus/block-bundle": "Basic element that composes a web page"
             },
-            "time": "1352676950",
+            "time": "1353360702",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2854,12 +2855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusFaqBundle",
-                "reference": "0ba2c242005807fae25e9500e9d164a1c2a24545"
+                "reference": "d0e9ad6923885db07a98eb514fd011793247d0fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusFaqBundle/archive/0ba2c242005807fae25e9500e9d164a1c2a24545.zip",
-                "reference": "0ba2c242005807fae25e9500e9d164a1c2a24545",
+                "url": "https://github.com/Zorbus/ZorbusFaqBundle/archive/d0e9ad6923885db07a98eb514fd011793247d0fc.zip",
+                "reference": "d0e9ad6923885db07a98eb514fd011793247d0fc",
                 "shasum": ""
             },
             "require": {
@@ -2873,7 +2874,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352996523",
+            "time": "1353360726",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2912,12 +2913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusGalleryBundle",
-                "reference": "0.0.1"
+                "reference": "a4dfd65cb65f13c5315bb4a291e5b3903bd46f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusGalleryBundle/archive/0.0.1.zip",
-                "reference": "0.0.1",
+                "url": "https://github.com/Zorbus/ZorbusGalleryBundle/archive/a4dfd65cb65f13c5315bb4a291e5b3903bd46f11.zip",
+                "reference": "a4dfd65cb65f13c5315bb4a291e5b3903bd46f11",
                 "shasum": ""
             },
             "require": {
@@ -2931,7 +2932,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352835933",
+            "time": "1353360749",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2972,12 +2973,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zorbus/ZorbusGlossaryBundle",
-                "reference": "27ce46126a745d87e8599db4e2726df467dd59cd"
+                "reference": "c9eba79f745fcc8b7e82e64bb94c527baf608ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Zorbus/ZorbusGlossaryBundle/archive/27ce46126a745d87e8599db4e2726df467dd59cd.zip",
-                "reference": "27ce46126a745d87e8599db4e2726df467dd59cd",
+                "url": "https://github.com/Zorbus/ZorbusGlossaryBundle/archive/c9eba79f745fcc8b7e82e64bb94c527baf608ff2.zip",
+                "reference": "c9eba79f745fcc8b7e82e64bb94c527baf608ff2",
                 "shasum": ""
             },
             "require": {
@@ -2991,7 +2992,7 @@
                 "doctrine/doctrine-fixtures-bundle": "To load fixtures data",
                 "doctrine/doctrine-migrations-bundle": "To alter database schema in a secure way"
             },
-            "time": "1352996250",
+            "time": "1353369033",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {

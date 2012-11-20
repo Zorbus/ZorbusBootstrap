@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="pt" datatype="plaintext" original="" >
+        <body>
+            <trans-unit id="1">
+                <source>Users</source>
+                <target>Utilizadores</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Content</source>
+                <target>Conteúdos</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Articles</source>
+                <target>Artigos</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>FAQs</source>
+                <target>FAQs</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Glossaries</source>
+                <target>Glossários</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Links</source>
+                <target>Ligações</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Polls</source>
+                <target>Questionários</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Documents</source>
+                <target>Documentos</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Images</source>
+                <target>Imagens</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Galleries</source>
+                <target>Galerias</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Banners</source>
+                <target>Banners</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Pages</source>
+                <target>Páginas</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>Page</source>
+                <target>Página</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Menus</source>
+                <target>Menus</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="">
+                <source></source>
+                <target></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

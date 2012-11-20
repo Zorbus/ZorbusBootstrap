@@ -310,6 +310,134 @@
                 <source>list.label_last_name</source>
                 <target>Último nome</target>
             </trans-unit>
+            <trans-unit id="3">
+                <source>form.label_first_name</source>
+                <target>Primeiro nome</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>form.label_last_name</source>
+                <target>Último nome</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>form.label_is_blocked</source>
+                <target>Bloqueado</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>breadcrumb.link_user_show</source>
+                <target>Mostrar utilizador</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>show.label_username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>show.label_email</source>
+                <target>E-mail</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>show.label_groups</source>
+                <target>Grupos</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Groups</source>
+                <target>Grupos</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>General</source>
+                <target>Geral</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Profile</source>
+                <target>Perfil</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>show.label_date_of_birth</source>
+                <target>Data de nascimento</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>show.label_firstname</source>
+                <target>Primeiro nome</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>show.label_lastname</source>
+                <target>Último nome</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>show.label_website</source>
+                <target>Website</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>show.label_biography</source>
+                <target>Biografia</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>show.label_gender</source>
+                <target>Género</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>show.label_locale</source>
+                <target>Língua</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>show.label_timezone</source>
+                <target>Fuso horário</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>show.label_phone</source>
+                <target>Telefone</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>show.label_facebook_uid</source>
+                <target>Facebook Id</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>show.label_facebook_name</source>
+                <target>Facebook nome</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>show.label_twitter_uid</source>
+                <target>Twitter Id</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>show.label_twitter_name</source>
+                <target>Twitter nome</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>show.label_gplus_uid</source>
+                <target>Google Plus Id</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>show.label_gplus_name</source>
+                <target>Google Plus nome</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>Security</source>
+                <target>Segurança</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>show.label_token</source>
+                <target>Token</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>show.label_two_step_verification_code</source>
+                <target>Verificação autenticação</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>breadcrumb.link_user_history</source>
+                <target>Histórico do utilizador</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>Dashboard</source>
+                <target>Painel de controlo</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>field.label_roles_editable</source>
+                <target>Editar</target>
+            </trans-unit>
+            <trans-unit id="">
+                <source></source>
+                <target></target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
